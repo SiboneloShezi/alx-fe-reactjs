@@ -6,6 +6,10 @@ import "./App.css";
 import RecipeList from "./components/RecipeList";
 import AddRecipeForm from "./components/AddRecipeForm";
 import RecipeDetails from "./components/RecipeDetails";
+import SearchBar from './components/SearchBar';
+import FilterRecipes from './components/SearchBar';
+
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +18,8 @@ function App() {
     <>
       <Router>
         <div>
+          <FilterRecipes/>
+          <SearchBar/>
           <AddRecipeForm />
           <RecipeList />
           <RecipeDetails />
